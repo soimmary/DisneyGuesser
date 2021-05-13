@@ -10,6 +10,8 @@ from joblib import dump, load
 import nltk
 from nltk.corpus import stopwords
 from nltk import word_tokenize
+nltk.download('punkt')
+nltk.download('stopwords')
 
 sw = stopwords.words('russian')
 stemmer = SnowballStemmer('russian')
