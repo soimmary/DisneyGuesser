@@ -12,8 +12,6 @@ from nltk.corpus import stopwords
 from nltk import word_tokenize
 
 sw = stopwords.words('russian')
-nltk.download('punkt')
-nltk.download('stopwords')
 stemmer = SnowballStemmer('russian')
 
 
