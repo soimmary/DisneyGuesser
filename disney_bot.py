@@ -48,7 +48,7 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda m: True)
 def send_result(message):
-    bot.send_message(answer(message.text.strip().lower()))
+    bot.send_message(message.chat.id, answer(message.text.strip().lower()))
 
 
 if __name__ == '__main__':
