@@ -8,7 +8,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     bot.send_message(message.chat.id,
-                     "Здравствуйте! Это бот, который считает длину вашего сообщения.")
+                     "Привет! Это бот, который...")
 
 
 @bot.message_handler(func=lambda m: True)
